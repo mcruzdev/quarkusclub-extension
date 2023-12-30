@@ -1,0 +1,7 @@
+dev/matheuscruz/quarkusclub/extension/runtime/QuarkusClubLogHandler.class
+dev/matheuscruz/quarkusclub/extension/runtime/QuarkusClubLogHandlerRecorder.class
+dev/matheuscruz/quarkusclub/extension/runtime/QuarkusClub.class
+dev/matheuscruz/quarkusclub/extension/runtime/SimpleMessager.class
+META-INF/quarkus-javadoc.properties
+META-INF/quarkus-config-roots.list
+dev/matheuscruz/quarkusclub/extension/runtime/QuarkusClubConfig.class

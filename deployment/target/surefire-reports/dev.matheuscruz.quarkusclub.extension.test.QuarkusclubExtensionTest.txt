@@ -1,0 +1,93 @@
+-------------------------------------------------------------------------------
+Test set: dev.matheuscruz.quarkusclub.extension.test.QuarkusclubExtensionTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.498 s <<< FAILURE! - in dev.matheuscruz.quarkusclub.extension.test.QuarkusclubExtensionTest
+dev.matheuscruz.quarkusclub.extension.test.QuarkusclubExtensionTest  Time elapsed: 1.498 s  <<< ERROR!
+java.lang.RuntimeException: 
+java.lang.RuntimeException: io.quarkus.builder.BuildException: Build failure: Build failed due to errors
+	[error]: Build step io.quarkus.arc.deployment.BeanArchiveProcessor#build threw an exception: java.lang.IllegalStateException: Failed to index: dev.matheuscruz.GeneratedPingResource
+	at io.quarkus.deployment.index.IndexingUtil.indexClass(IndexingUtil.java:157)
+	at io.quarkus.arc.deployment.BeanArchiveProcessor.build(BeanArchiveProcessor.java:94)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.quarkus.deployment.ExtensionLoader$3.execute(ExtensionLoader.java:849)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:256)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2513)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1538)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:501)
+Caused by: java.lang.IllegalArgumentException: stream cannot be null
+	at org.jboss.jandex.Indexer.indexWithSummary(Indexer.java:2482)
+	at io.quarkus.deployment.index.IndexingUtil.indexClass(IndexingUtil.java:152)
+	... 12 more
+
+	at io.quarkus.test.QuarkusUnitTest.beforeAll(QuarkusUnitTest.java:709)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.RuntimeException: io.quarkus.builder.BuildException: Build failure: Build failed due to errors
+	[error]: Build step io.quarkus.arc.deployment.BeanArchiveProcessor#build threw an exception: java.lang.IllegalStateException: Failed to index: dev.matheuscruz.GeneratedPingResource
+	at io.quarkus.deployment.index.IndexingUtil.indexClass(IndexingUtil.java:157)
+	at io.quarkus.arc.deployment.BeanArchiveProcessor.build(BeanArchiveProcessor.java:94)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.quarkus.deployment.ExtensionLoader$3.execute(ExtensionLoader.java:849)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:256)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2513)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1538)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:501)
+Caused by: java.lang.IllegalArgumentException: stream cannot be null
+	at org.jboss.jandex.Indexer.indexWithSummary(Indexer.java:2482)
+	at io.quarkus.deployment.index.IndexingUtil.indexClass(IndexingUtil.java:152)
+	... 12 more
+
+	at io.quarkus.runner.bootstrap.AugmentActionImpl.runAugment(AugmentActionImpl.java:334)
+	at io.quarkus.runner.bootstrap.AugmentActionImpl.createInitialRuntimeApplication(AugmentActionImpl.java:251)
+	at io.quarkus.test.QuarkusUnitTest.beforeAll(QuarkusUnitTest.java:655)
+	... 1 more
+Caused by: io.quarkus.builder.BuildException: Build failure: Build failed due to errors
+	[error]: Build step io.quarkus.arc.deployment.BeanArchiveProcessor#build threw an exception: java.lang.IllegalStateException: Failed to index: dev.matheuscruz.GeneratedPingResource
+	at io.quarkus.deployment.index.IndexingUtil.indexClass(IndexingUtil.java:157)
+	at io.quarkus.arc.deployment.BeanArchiveProcessor.build(BeanArchiveProcessor.java:94)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.quarkus.deployment.ExtensionLoader$3.execute(ExtensionLoader.java:849)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:256)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2513)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1538)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:501)
+Caused by: java.lang.IllegalArgumentException: stream cannot be null
+	at org.jboss.jandex.Indexer.indexWithSummary(Indexer.java:2482)
+	at io.quarkus.deployment.index.IndexingUtil.indexClass(IndexingUtil.java:152)
+	... 12 more
+
+	at io.quarkus.builder.Execution.run(Execution.java:123)
+	at io.quarkus.builder.BuildExecutionBuilder.execute(BuildExecutionBuilder.java:79)
+	at io.quarkus.deployment.QuarkusAugmentor.run(QuarkusAugmentor.java:160)
+	at io.quarkus.runner.bootstrap.AugmentActionImpl.runAugment(AugmentActionImpl.java:330)
+	... 3 more
+Caused by: java.lang.IllegalStateException: Failed to index: dev.matheuscruz.GeneratedPingResource
+	at io.quarkus.deployment.index.IndexingUtil.indexClass(IndexingUtil.java:157)
+	at io.quarkus.arc.deployment.BeanArchiveProcessor.build(BeanArchiveProcessor.java:94)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.quarkus.deployment.ExtensionLoader$3.execute(ExtensionLoader.java:849)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:256)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2513)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1538)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:501)
+Caused by: java.lang.IllegalArgumentException: stream cannot be null
+	at org.jboss.jandex.Indexer.indexWithSummary(Indexer.java:2482)
+	at io.quarkus.deployment.index.IndexingUtil.indexClass(IndexingUtil.java:152)
+	... 9 more
+

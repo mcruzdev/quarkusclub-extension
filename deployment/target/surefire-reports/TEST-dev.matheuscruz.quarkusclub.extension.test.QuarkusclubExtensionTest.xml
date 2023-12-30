@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="dev.matheuscruz.quarkusclub.extension.test.QuarkusclubExtensionTest" time="1.498" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/cruz/github.com/mcruzdev/quarkusclub-extension/deployment/target/test-classes:/home/cruz/github.com/mcruzdev/quarkusclub-extension/deployment/target/classes:/home/cruz/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/3.1.0/jakarta.ws.rs-api-3.1.0.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-arc-deployment/3.6.4/quarkus-arc-deployment-3.6.4.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-core-deployment/3.6.4/quarkus-core-deployment-3.6.4.jar:/home/cruz/.m2/repository/org/aesh/readline/2.4/readline-2.4.jar:/home/cruz/.m2/repository/org/fusesource/jansi/jansi/2.4.0/jansi-2.4.0.jar:/home/cruz/.m2/repository/org/aesh/aesh/2.7/aesh-2.7.jar:/home/cruz/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/home/cruz/.m2/repository/org/wildfly/common/wildfly-common/1.7.0.Final/wildfly-common-1.7.0.Final.jar:/home/cruz/.m2/repository/io/quarkus/gizmo/gizmo/1.7.0/gizmo-1.7.0.jar:/home/cruz/.m2/repository/org/ow2/asm/asm-util/9.6/asm-util-9.6.jar:/home/cruz/.m2/repository/org/ow2/asm/asm-analysis/9.6/asm-analysis-9.6.jar:/home/cruz/.m2/repository/io/smallrye/jandex/3.1.6/jandex-3.1.6.jar:/home/cruz/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/home/cruz/.m2/repository/org/ow2/asm/asm-commons/9.6/asm-commons-9.6.jar:/home/cruz/.m2/repository/org/ow2/asm/asm-tree/9.6/asm-tree-9.6.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-development-mode-spi/3.6.4/quarkus-development-mode-spi-3.6.4.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-class-change-agent/3.6.4/quarkus-class-change-agent-3.6.4.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-bootstrap-core/3.6.4/quarkus-bootstrap-core-3.6.4.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-bootstrap-app-model/3.6.4/quarkus-bootstrap-app-model-3.6.4.jar:/home/cruz/.m2/repository/io/smallrye/common/smallrye-common-io/2.1.2/smallrye-common-io-2.1.2.jar:/home/cruz/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.inject/0.9.0.M2/org.eclipse.sisu.inject-0.9.0.M2.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-builder/3.6.4/quarkus-builder-3.6.4.jar:/home/cruz/.m2/repository/org/graalvm/sdk/graal-sdk/23.0.1/graal-sdk-23.0.1.jar:/home/cruz/.m2/repository/org/junit/platform/junit-platform-launcher/1.10.1/junit-platform-launcher-1.10.1.jar:/home/cruz/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-smallrye-context-propagation-spi/3.6.4/quarkus-smallrye-context-propagation-spi-3.6.4.jar:/home/cruz/.m2/repository/org/eclipse/microprofile/context-propagation/microprofile-context-propagation-api/1.3/microprofile-context-propagation-api-1.3.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-vertx-http-dev-ui-spi/3.6.4/quarkus-vertx-http-dev-ui-spi-3.6.4.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-arc/3.6.4/quarkus-arc-3.6.4.jar:/home/cruz/.m2/repository/io/quarkus/arc/arc/3.6.4/arc-3.6.4.jar:/home/cruz/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/cruz/.m2/repository/io/smallrye/reactive/mutiny/2.5.1/mutiny-2.5.1.jar:/home/cruz/.m2/repository/io/smallrye/common/smallrye-common-annotation/2.1.2/smallrye-common-annotation-2.1.2.jar:/home/cruz/.m2/repository/io/quarkus/arc/arc-processor/3.6.4/arc-processor-3.6.4.jar:/home/cruz/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/home/cruz/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/cruz/github.com/mcruzdev/quarkusclub-extension/runtime/target/quarkusclub-extension-1.0.0-SNAPSHOT.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-junit5-internal/3.6.4/quarkus-junit5-internal-3.6.4.jar:/home/cruz/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-api/1.2.6/shrinkwrap-api-1.2.6.jar:/home/cruz/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-spi/1.2.6/shrinkwrap-spi-1.2.6.jar:/home/cruz/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-impl-base/1.2.6/shrinkwrap-impl-base-1.2.6.jar:/home/cruz/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.1/junit-jupiter-api-5.10.1.jar:/home/cruz/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/cruz/.m2/repository/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.jar:/home/cruz/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/cruz/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.jar:/home/cruz/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.jar:/home/cruz/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-core/3.6.4/quarkus-core-3.6.4.jar:/home/cruz/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/cruz/.m2/repository/io/smallrye/common/smallrye-common-os/2.1.2/smallrye-common-os-2.1.2.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-ide-launcher/3.6.4/quarkus-ide-launcher-3.6.4.jar:/home/cruz/.m2/repository/io/smallrye/config/smallrye-config/3.4.4/smallrye-config-3.4.4.jar:/home/cruz/.m2/repository/io/smallrye/config/smallrye-config-core/3.4.4/smallrye-config-core-3.4.4.jar:/home/cruz/.m2/repository/org/eclipse/microprofile/config/microprofile-config-api/3.0.3/microprofile-config-api-3.0.3.jar:/home/cruz/.m2/repository/io/smallrye/common/smallrye-common-classloader/2.1.2/smallrye-common-classloader-2.1.2.jar:/home/cruz/.m2/repository/io/smallrye/config/smallrye-config-common/3.4.4/smallrye-config-common-3.4.4.jar:/home/cruz/.m2/repository/org/jboss/logmanager/jboss-logmanager/3.0.2.Final/jboss-logmanager-3.0.2.Final.jar:/home/cruz/.m2/repository/io/smallrye/common/smallrye-common-constraint/2.1.2/smallrye-common-constraint-2.1.2.jar:/home/cruz/.m2/repository/io/smallrye/common/smallrye-common-cpu/2.1.2/smallrye-common-cpu-2.1.2.jar:/home/cruz/.m2/repository/io/smallrye/common/smallrye-common-expression/2.1.2/smallrye-common-expression-2.1.2.jar:/home/cruz/.m2/repository/io/smallrye/common/smallrye-common-function/2.1.2/smallrye-common-function-2.1.2.jar:/home/cruz/.m2/repository/io/smallrye/common/smallrye-common-net/2.1.2/smallrye-common-net-2.1.2.jar:/home/cruz/.m2/repository/io/smallrye/common/smallrye-common-ref/2.1.2/smallrye-common-ref-2.1.2.jar:/home/cruz/.m2/repository/jakarta/json/jakarta.json-api/2.1.3/jakarta.json-api-2.1.3.jar:/home/cruz/.m2/repository/org/eclipse/parsson/parsson/1.1.5/parsson-1.1.5.jar:/home/cruz/.m2/repository/org/jboss/logging/jboss-logging-annotations/2.2.1.Final/jboss-logging-annotations-2.2.1.Final.jar:/home/cruz/.m2/repository/org/jboss/threads/jboss-threads/3.5.1.Final/jboss-threads-3.5.1.Final.jar:/home/cruz/.m2/repository/org/slf4j/slf4j-api/2.0.6/slf4j-api-2.0.6.jar:/home/cruz/.m2/repository/org/jboss/slf4j/slf4j-jboss-logmanager/2.0.0.Final/slf4j-jboss-logmanager-2.0.0.Final.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-bootstrap-runner/3.6.4/quarkus-bootstrap-runner-3.6.4.jar:/home/cruz/.m2/repository/io/github/crac/org-crac/0.1.3/org-crac-0.1.3.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-fs-util/0.0.9/quarkus-fs-util-0.0.9.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-test-common/3.6.4/quarkus-test-common-3.6.4.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-bootstrap-maven-resolver/3.6.4/quarkus-bootstrap-maven-resolver-3.6.4.jar:/home/cruz/.m2/repository/io/smallrye/beanbag/smallrye-beanbag-maven/1.3.2/smallrye-beanbag-maven-1.3.2.jar:/home/cruz/.m2/repository/io/smallrye/beanbag/smallrye-beanbag-sisu/1.3.2/smallrye-beanbag-sisu-1.3.2.jar:/home/cruz/.m2/repository/io/smallrye/beanbag/smallrye-beanbag/1.3.2/smallrye-beanbag-1.3.2.jar:/home/cruz/.m2/repository/commons-codec/commons-codec/1.16.0/commons-codec-1.16.0.jar:/home/cruz/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/home/cruz/.m2/repository/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar:/home/cruz/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/home/cruz/.m2/repository/org/apache/maven/maven-artifact/3.9.6/maven-artifact-3.9.6.jar:/home/cruz/.m2/repository/org/apache/maven/maven-builder-support/3.9.6/maven-builder-support-3.9.6.jar:/home/cruz/.m2/repository/org/apache/maven/maven-model/3.9.6/maven-model-3.9.6.jar:/home/cruz/.m2/repository/org/apache/maven/maven-model-builder/3.9.6/maven-model-builder-3.9.6.jar:/home/cruz/.m2/repository/org/apache/maven/maven-repository-metadata/3.9.6/maven-repository-metadata-3.9.6.jar:/home/cruz/.m2/repository/org/apache/maven/maven-settings/3.9.6/maven-settings-3.9.6.jar:/home/cruz/.m2/repository/org/apache/maven/resolver/maven-resolver-api/1.9.18/maven-resolver-api-1.9.18.jar:/home/cruz/.m2/repository/org/apache/maven/resolver/maven-resolver-impl/1.9.18/maven-resolver-impl-1.9.18.jar:/home/cruz/.m2/repository/org/apache/maven/resolver/maven-resolver-named-locks/1.9.18/maven-resolver-named-locks-1.9.18.jar:/home/cruz/.m2/repository/org/apache/maven/resolver/maven-resolver-spi/1.9.18/maven-resolver-spi-1.9.18.jar:/home/cruz/.m2/repository/org/apache/maven/resolver/maven-resolver-util/1.9.18/maven-resolver-util-1.9.18.jar:/home/cruz/.m2/repository/org/apache/maven/resolver/maven-resolver-transport-http/1.9.10/maven-resolver-transport-http-1.9.10.jar:/home/cruz/.m2/repository/org/apache/maven/wagon/wagon-provider-api/3.5.3/wagon-provider-api-3.5.3.jar:/home/cruz/.m2/repository/org/apache/maven/wagon/wagon-http-shared/3.5.3/wagon-http-shared-3.5.3.jar:/home/cruz/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.26/plexus-interpolation-1.26.jar:/home/cruz/.m2/repository/org/codehaus/plexus/plexus-utils/3.5.1/plexus-utils-3.5.1.jar:/home/cruz/.m2/repository/org/codehaus/plexus/plexus-xml/4.0.0/plexus-xml-4.0.0.jar:/home/cruz/.m2/repository/org/apache/maven/maven-xml-impl/4.0.0-alpha-5/maven-xml-impl-4.0.0-alpha-5.jar:/home/cruz/.m2/repository/org/apache/maven/maven-api-xml/4.0.0-alpha-5/maven-api-xml-4.0.0-alpha-5.jar:/home/cruz/.m2/repository/org/apache/maven/maven-api-meta/4.0.0-alpha-5/maven-api-meta-4.0.0-alpha-5.jar:/home/cruz/.m2/repository/org/codehaus/plexus/plexus-cipher/2.0/plexus-cipher-2.0.jar:/home/cruz/.m2/repository/org/codehaus/plexus/plexus-sec-dispatcher/2.0/plexus-sec-dispatcher-2.0.jar:/home/cruz/.m2/repository/org/apache/maven/maven-embedder/3.9.6/maven-embedder-3.9.6.jar:/home/cruz/.m2/repository/org/apache/maven/maven-core/3.9.6/maven-core-3.9.6.jar:/home/cruz/.m2/repository/org/codehaus/plexus/plexus-component-annotations/2.1.0/plexus-component-annotations-2.1.0.jar:/home/cruz/.m2/repository/org/apache/maven/maven-plugin-api/3.9.6/maven-plugin-api-3.9.6.jar:/home/cruz/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.3.4/maven-shared-utils-3.3.4.jar:/home/cruz/.m2/repository/com/google/inject/guice/5.1.0/guice-5.1.0.jar:/home/cruz/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/home/cruz/.m2/repository/com/google/guava/guava/32.1.3-jre/guava-32.1.3-jre.jar:/home/cruz/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/cruz/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/home/cruz/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.6.0/plexus-classworlds-2.6.0.jar:/home/cruz/.m2/repository/commons-cli/commons-cli/1.5.0/commons-cli-1.5.0.jar:/home/cruz/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.plexus/0.9.0.M2/org.eclipse.sisu.plexus-0.9.0.M2.jar:/home/cruz/.m2/repository/org/apache/maven/maven-settings-builder/3.9.6/maven-settings-builder-3.9.6.jar:/home/cruz/.m2/repository/org/apache/maven/maven-resolver-provider/3.9.6/maven-resolver-provider-3.9.6.jar:/home/cruz/.m2/repository/org/apache/maven/resolver/maven-resolver-connector-basic/1.9.18/maven-resolver-connector-basic-1.9.18.jar:/home/cruz/.m2/repository/org/apache/maven/resolver/maven-resolver-transport-wagon/1.9.18/maven-resolver-transport-wagon-1.9.18.jar:/home/cruz/.m2/repository/org/apache/maven/wagon/wagon-http/3.5.3/wagon-http-3.5.3.jar:/home/cruz/.m2/repository/org/apache/maven/wagon/wagon-file/3.5.3/wagon-file-3.5.3.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-bootstrap-gradle-resolver/3.6.4/quarkus-bootstrap-gradle-resolver-3.6.4.jar:/home/cruz/.m2/repository/commons-io/commons-io/2.15.1/commons-io-2.15.1.jar:/home/cruz/.m2/repository/org/jboss/logging/commons-logging-jboss-logging/1.0.0.Final/commons-logging-jboss-logging-1.0.0.Final.jar:/home/cruz/.m2/repository/jakarta/enterprise/jakarta.enterprise.cdi-api/4.0.1/jakarta.enterprise.cdi-api-4.0.1.jar:/home/cruz/.m2/repository/jakarta/enterprise/jakarta.enterprise.lang-model/4.0.1/jakarta.enterprise.lang-model-4.0.1.jar:/home/cruz/.m2/repository/jakarta/el/jakarta.el-api/5.0.1/jakarta.el-api-5.0.1.jar:/home/cruz/.m2/repository/jakarta/interceptor/jakarta.interceptor-api/2.1.0/jakarta.interceptor-api-2.1.0.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-devtools-utilities/3.6.4/quarkus-devtools-utilities-3.6.4.jar:/home/cruz/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/home/cruz/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="groovy.use.classvalue" value="false"/>
+    <property name="sun.boot.library.path" value="/home/cruz/.sdkman/candidates/java/17.0.7-amzn/lib"/>
+    <property name="sun.java.command" value="/home/cruz/github.com/mcruzdev/quarkusclub-extension/deployment/target/surefire/surefirebooter-20231230193945968_3.jar /home/cruz/github.com/mcruzdev/quarkusclub-extension/deployment/target/surefire 2023-12-30T19-39-44_583-jvmRun1 surefire-20231230193945968_1tmp surefire_0-20231230193945968_2tmp"/>
+    <property name="maven.home" value="/home/cruz/.sdkman/candidates/maven/current"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/cruz/github.com/mcruzdev/quarkusclub-extension/deployment/target/test-classes:/home/cruz/github.com/mcruzdev/quarkusclub-extension/deployment/target/classes:/home/cruz/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/3.1.0/jakarta.ws.rs-api-3.1.0.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-arc-deployment/3.6.4/quarkus-arc-deployment-3.6.4.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-core-deployment/3.6.4/quarkus-core-deployment-3.6.4.jar:/home/cruz/.m2/repository/org/aesh/readline/2.4/readline-2.4.jar:/home/cruz/.m2/repository/org/fusesource/jansi/jansi/2.4.0/jansi-2.4.0.jar:/home/cruz/.m2/repository/org/aesh/aesh/2.7/aesh-2.7.jar:/home/cruz/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/home/cruz/.m2/repository/org/wildfly/common/wildfly-common/1.7.0.Final/wildfly-common-1.7.0.Final.jar:/home/cruz/.m2/repository/io/quarkus/gizmo/gizmo/1.7.0/gizmo-1.7.0.jar:/home/cruz/.m2/repository/org/ow2/asm/asm-util/9.6/asm-util-9.6.jar:/home/cruz/.m2/repository/org/ow2/asm/asm-analysis/9.6/asm-analysis-9.6.jar:/home/cruz/.m2/repository/io/smallrye/jandex/3.1.6/jandex-3.1.6.jar:/home/cruz/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/home/cruz/.m2/repository/org/ow2/asm/asm-commons/9.6/asm-commons-9.6.jar:/home/cruz/.m2/repository/org/ow2/asm/asm-tree/9.6/asm-tree-9.6.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-development-mode-spi/3.6.4/quarkus-development-mode-spi-3.6.4.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-class-change-agent/3.6.4/quarkus-class-change-agent-3.6.4.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-bootstrap-core/3.6.4/quarkus-bootstrap-core-3.6.4.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-bootstrap-app-model/3.6.4/quarkus-bootstrap-app-model-3.6.4.jar:/home/cruz/.m2/repository/io/smallrye/common/smallrye-common-io/2.1.2/smallrye-common-io-2.1.2.jar:/home/cruz/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.inject/0.9.0.M2/org.eclipse.sisu.inject-0.9.0.M2.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-builder/3.6.4/quarkus-builder-3.6.4.jar:/home/cruz/.m2/repository/org/graalvm/sdk/graal-sdk/23.0.1/graal-sdk-23.0.1.jar:/home/cruz/.m2/repository/org/junit/platform/junit-platform-launcher/1.10.1/junit-platform-launcher-1.10.1.jar:/home/cruz/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-smallrye-context-propagation-spi/3.6.4/quarkus-smallrye-context-propagation-spi-3.6.4.jar:/home/cruz/.m2/repository/org/eclipse/microprofile/context-propagation/microprofile-context-propagation-api/1.3/microprofile-context-propagation-api-1.3.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-vertx-http-dev-ui-spi/3.6.4/quarkus-vertx-http-dev-ui-spi-3.6.4.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-arc/3.6.4/quarkus-arc-3.6.4.jar:/home/cruz/.m2/repository/io/quarkus/arc/arc/3.6.4/arc-3.6.4.jar:/home/cruz/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/cruz/.m2/repository/io/smallrye/reactive/mutiny/2.5.1/mutiny-2.5.1.jar:/home/cruz/.m2/repository/io/smallrye/common/smallrye-common-annotation/2.1.2/smallrye-common-annotation-2.1.2.jar:/home/cruz/.m2/repository/io/quarkus/arc/arc-processor/3.6.4/arc-processor-3.6.4.jar:/home/cruz/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/home/cruz/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/cruz/github.com/mcruzdev/quarkusclub-extension/runtime/target/quarkusclub-extension-1.0.0-SNAPSHOT.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-junit5-internal/3.6.4/quarkus-junit5-internal-3.6.4.jar:/home/cruz/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-api/1.2.6/shrinkwrap-api-1.2.6.jar:/home/cruz/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-spi/1.2.6/shrinkwrap-spi-1.2.6.jar:/home/cruz/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-impl-base/1.2.6/shrinkwrap-impl-base-1.2.6.jar:/home/cruz/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.1/junit-jupiter-api-5.10.1.jar:/home/cruz/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/cruz/.m2/repository/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.jar:/home/cruz/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/cruz/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.jar:/home/cruz/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.jar:/home/cruz/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-core/3.6.4/quarkus-core-3.6.4.jar:/home/cruz/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/cruz/.m2/repository/io/smallrye/common/smallrye-common-os/2.1.2/smallrye-common-os-2.1.2.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-ide-launcher/3.6.4/quarkus-ide-launcher-3.6.4.jar:/home/cruz/.m2/repository/io/smallrye/config/smallrye-config/3.4.4/smallrye-config-3.4.4.jar:/home/cruz/.m2/repository/io/smallrye/config/smallrye-config-core/3.4.4/smallrye-config-core-3.4.4.jar:/home/cruz/.m2/repository/org/eclipse/microprofile/config/microprofile-config-api/3.0.3/microprofile-config-api-3.0.3.jar:/home/cruz/.m2/repository/io/smallrye/common/smallrye-common-classloader/2.1.2/smallrye-common-classloader-2.1.2.jar:/home/cruz/.m2/repository/io/smallrye/config/smallrye-config-common/3.4.4/smallrye-config-common-3.4.4.jar:/home/cruz/.m2/repository/org/jboss/logmanager/jboss-logmanager/3.0.2.Final/jboss-logmanager-3.0.2.Final.jar:/home/cruz/.m2/repository/io/smallrye/common/smallrye-common-constraint/2.1.2/smallrye-common-constraint-2.1.2.jar:/home/cruz/.m2/repository/io/smallrye/common/smallrye-common-cpu/2.1.2/smallrye-common-cpu-2.1.2.jar:/home/cruz/.m2/repository/io/smallrye/common/smallrye-common-expression/2.1.2/smallrye-common-expression-2.1.2.jar:/home/cruz/.m2/repository/io/smallrye/common/smallrye-common-function/2.1.2/smallrye-common-function-2.1.2.jar:/home/cruz/.m2/repository/io/smallrye/common/smallrye-common-net/2.1.2/smallrye-common-net-2.1.2.jar:/home/cruz/.m2/repository/io/smallrye/common/smallrye-common-ref/2.1.2/smallrye-common-ref-2.1.2.jar:/home/cruz/.m2/repository/jakarta/json/jakarta.json-api/2.1.3/jakarta.json-api-2.1.3.jar:/home/cruz/.m2/repository/org/eclipse/parsson/parsson/1.1.5/parsson-1.1.5.jar:/home/cruz/.m2/repository/org/jboss/logging/jboss-logging-annotations/2.2.1.Final/jboss-logging-annotations-2.2.1.Final.jar:/home/cruz/.m2/repository/org/jboss/threads/jboss-threads/3.5.1.Final/jboss-threads-3.5.1.Final.jar:/home/cruz/.m2/repository/org/slf4j/slf4j-api/2.0.6/slf4j-api-2.0.6.jar:/home/cruz/.m2/repository/org/jboss/slf4j/slf4j-jboss-logmanager/2.0.0.Final/slf4j-jboss-logmanager-2.0.0.Final.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-bootstrap-runner/3.6.4/quarkus-bootstrap-runner-3.6.4.jar:/home/cruz/.m2/repository/io/github/crac/org-crac/0.1.3/org-crac-0.1.3.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-fs-util/0.0.9/quarkus-fs-util-0.0.9.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-test-common/3.6.4/quarkus-test-common-3.6.4.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-bootstrap-maven-resolver/3.6.4/quarkus-bootstrap-maven-resolver-3.6.4.jar:/home/cruz/.m2/repository/io/smallrye/beanbag/smallrye-beanbag-maven/1.3.2/smallrye-beanbag-maven-1.3.2.jar:/home/cruz/.m2/repository/io/smallrye/beanbag/smallrye-beanbag-sisu/1.3.2/smallrye-beanbag-sisu-1.3.2.jar:/home/cruz/.m2/repository/io/smallrye/beanbag/smallrye-beanbag/1.3.2/smallrye-beanbag-1.3.2.jar:/home/cruz/.m2/repository/commons-codec/commons-codec/1.16.0/commons-codec-1.16.0.jar:/home/cruz/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/home/cruz/.m2/repository/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar:/home/cruz/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/home/cruz/.m2/repository/org/apache/maven/maven-artifact/3.9.6/maven-artifact-3.9.6.jar:/home/cruz/.m2/repository/org/apache/maven/maven-builder-support/3.9.6/maven-builder-support-3.9.6.jar:/home/cruz/.m2/repository/org/apache/maven/maven-model/3.9.6/maven-model-3.9.6.jar:/home/cruz/.m2/repository/org/apache/maven/maven-model-builder/3.9.6/maven-model-builder-3.9.6.jar:/home/cruz/.m2/repository/org/apache/maven/maven-repository-metadata/3.9.6/maven-repository-metadata-3.9.6.jar:/home/cruz/.m2/repository/org/apache/maven/maven-settings/3.9.6/maven-settings-3.9.6.jar:/home/cruz/.m2/repository/org/apache/maven/resolver/maven-resolver-api/1.9.18/maven-resolver-api-1.9.18.jar:/home/cruz/.m2/repository/org/apache/maven/resolver/maven-resolver-impl/1.9.18/maven-resolver-impl-1.9.18.jar:/home/cruz/.m2/repository/org/apache/maven/resolver/maven-resolver-named-locks/1.9.18/maven-resolver-named-locks-1.9.18.jar:/home/cruz/.m2/repository/org/apache/maven/resolver/maven-resolver-spi/1.9.18/maven-resolver-spi-1.9.18.jar:/home/cruz/.m2/repository/org/apache/maven/resolver/maven-resolver-util/1.9.18/maven-resolver-util-1.9.18.jar:/home/cruz/.m2/repository/org/apache/maven/resolver/maven-resolver-transport-http/1.9.10/maven-resolver-transport-http-1.9.10.jar:/home/cruz/.m2/repository/org/apache/maven/wagon/wagon-provider-api/3.5.3/wagon-provider-api-3.5.3.jar:/home/cruz/.m2/repository/org/apache/maven/wagon/wagon-http-shared/3.5.3/wagon-http-shared-3.5.3.jar:/home/cruz/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.26/plexus-interpolation-1.26.jar:/home/cruz/.m2/repository/org/codehaus/plexus/plexus-utils/3.5.1/plexus-utils-3.5.1.jar:/home/cruz/.m2/repository/org/codehaus/plexus/plexus-xml/4.0.0/plexus-xml-4.0.0.jar:/home/cruz/.m2/repository/org/apache/maven/maven-xml-impl/4.0.0-alpha-5/maven-xml-impl-4.0.0-alpha-5.jar:/home/cruz/.m2/repository/org/apache/maven/maven-api-xml/4.0.0-alpha-5/maven-api-xml-4.0.0-alpha-5.jar:/home/cruz/.m2/repository/org/apache/maven/maven-api-meta/4.0.0-alpha-5/maven-api-meta-4.0.0-alpha-5.jar:/home/cruz/.m2/repository/org/codehaus/plexus/plexus-cipher/2.0/plexus-cipher-2.0.jar:/home/cruz/.m2/repository/org/codehaus/plexus/plexus-sec-dispatcher/2.0/plexus-sec-dispatcher-2.0.jar:/home/cruz/.m2/repository/org/apache/maven/maven-embedder/3.9.6/maven-embedder-3.9.6.jar:/home/cruz/.m2/repository/org/apache/maven/maven-core/3.9.6/maven-core-3.9.6.jar:/home/cruz/.m2/repository/org/codehaus/plexus/plexus-component-annotations/2.1.0/plexus-component-annotations-2.1.0.jar:/home/cruz/.m2/repository/org/apache/maven/maven-plugin-api/3.9.6/maven-plugin-api-3.9.6.jar:/home/cruz/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.3.4/maven-shared-utils-3.3.4.jar:/home/cruz/.m2/repository/com/google/inject/guice/5.1.0/guice-5.1.0.jar:/home/cruz/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/home/cruz/.m2/repository/com/google/guava/guava/32.1.3-jre/guava-32.1.3-jre.jar:/home/cruz/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/cruz/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/home/cruz/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.6.0/plexus-classworlds-2.6.0.jar:/home/cruz/.m2/repository/commons-cli/commons-cli/1.5.0/commons-cli-1.5.0.jar:/home/cruz/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.plexus/0.9.0.M2/org.eclipse.sisu.plexus-0.9.0.M2.jar:/home/cruz/.m2/repository/org/apache/maven/maven-settings-builder/3.9.6/maven-settings-builder-3.9.6.jar:/home/cruz/.m2/repository/org/apache/maven/maven-resolver-provider/3.9.6/maven-resolver-provider-3.9.6.jar:/home/cruz/.m2/repository/org/apache/maven/resolver/maven-resolver-connector-basic/1.9.18/maven-resolver-connector-basic-1.9.18.jar:/home/cruz/.m2/repository/org/apache/maven/resolver/maven-resolver-transport-wagon/1.9.18/maven-resolver-transport-wagon-1.9.18.jar:/home/cruz/.m2/repository/org/apache/maven/wagon/wagon-http/3.5.3/wagon-http-3.5.3.jar:/home/cruz/.m2/repository/org/apache/maven/wagon/wagon-file/3.5.3/wagon-file-3.5.3.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-bootstrap-gradle-resolver/3.6.4/quarkus-bootstrap-gradle-resolver-3.6.4.jar:/home/cruz/.m2/repository/commons-io/commons-io/2.15.1/commons-io-2.15.1.jar:/home/cruz/.m2/repository/org/jboss/logging/commons-logging-jboss-logging/1.0.0.Final/commons-logging-jboss-logging-1.0.0.Final.jar:/home/cruz/.m2/repository/jakarta/enterprise/jakarta.enterprise.cdi-api/4.0.1/jakarta.enterprise.cdi-api-4.0.1.jar:/home/cruz/.m2/repository/jakarta/enterprise/jakarta.enterprise.lang-model/4.0.1/jakarta.enterprise.lang-model-4.0.1.jar:/home/cruz/.m2/repository/jakarta/el/jakarta.el-api/5.0.1/jakarta.el-api-5.0.1.jar:/home/cruz/.m2/repository/jakarta/interceptor/jakarta.interceptor-api/2.1.0/jakarta.interceptor-api-2.1.0.jar:/home/cruz/.m2/repository/io/quarkus/quarkus-devtools-utilities/3.6.4/quarkus-devtools-utilities-3.6.4.jar:/home/cruz/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/home/cruz/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/cruz"/>
+    <property name="user.language" value="en"/>
+    <property name="jboss.log-version" value="false"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-04-18"/>
+    <property name="java.home" value="/home/cruz/.sdkman/candidates/java/17.0.7-amzn"/>
+    <property name="file.separator" value="/"/>
+    <property name="maven.repo" value="/home/cruz/.m2/repository"/>
+    <property name="basedir" value="/home/cruz/github.com/mcruzdev/quarkusclub-extension/deployment"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.nio.channels.DefaultThreadPool.threadFactory" value="io.quarkus.dev.io.NioThreadPoolThreadFactory"/>
+    <property name="surefire.real.class.path" value="/home/cruz/github.com/mcruzdev/quarkusclub-extension/deployment/target/surefire/surefirebooter-20231230193945968_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.7+7-LTS"/>
+    <property name="user.name" value="cruz"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.2.0-37-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-17.0.7.7.1"/>
+    <property name="localRepository" value="/home/cruz/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-17/issues/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="quarkus.log.file.path" value="target/target/quarkus.log"/>
+    <property name="java.version" value="17.0.7"/>
+    <property name="user.dir" value="/home/cruz/github.com/mcruzdev/quarkusclub-extension/deployment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.util.logging.manager" value="org.jboss.logmanager.LogManager"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="17.0.7+7-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="" classname="dev.matheuscruz.quarkusclub.extension.test.QuarkusclubExtensionTest" time="1.498">
+    <error message="java.lang.RuntimeException: io.quarkus.builder.BuildException: Build failure: Build failed due to errors&#10;	[error]: Build step io.quarkus.arc.deployment.BeanArchiveProcessor#build threw an exception: java.lang.IllegalStateException: Failed to index: dev.matheuscruz.GeneratedPingResource&#10;	at io.quarkus.deployment.index.IndexingUtil.indexClass(IndexingUtil.java:157)&#10;	at io.quarkus.arc.deployment.BeanArchiveProcessor.build(BeanArchiveProcessor.java:94)&#10;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#10;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#10;	at io.quarkus.deployment.ExtensionLoader$3.execute(ExtensionLoader.java:849)&#10;	at io.quarkus.builder.BuildContext.run(BuildContext.java:256)&#10;	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)&#10;	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2513)&#10;	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1538)&#10;	at java.base/java.lang.Thread.run(Thread.java:833)&#10;	at org.jboss.threads.JBossThread.run(JBossThread.java:501)&#10;Caused by: java.lang.IllegalArgumentException: stream cannot be null&#10;	at org.jboss.jandex.Indexer.indexWithSummary(Indexer.java:2482)&#10;	at io.quarkus.deployment.index.IndexingUtil.indexClass(IndexingUtil.java:152)&#10;	... 12 more&#10;" type="java.lang.RuntimeException"><![CDATA[java.lang.RuntimeException: 
+java.lang.RuntimeException: io.quarkus.builder.BuildException: Build failure: Build failed due to errors
+	[error]: Build step io.quarkus.arc.deployment.BeanArchiveProcessor#build threw an exception: java.lang.IllegalStateException: Failed to index: dev.matheuscruz.GeneratedPingResource
+	at io.quarkus.deployment.index.IndexingUtil.indexClass(IndexingUtil.java:157)
+	at io.quarkus.arc.deployment.BeanArchiveProcessor.build(BeanArchiveProcessor.java:94)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.quarkus.deployment.ExtensionLoader$3.execute(ExtensionLoader.java:849)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:256)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2513)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1538)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:501)
+Caused by: java.lang.IllegalArgumentException: stream cannot be null
+	at org.jboss.jandex.Indexer.indexWithSummary(Indexer.java:2482)
+	at io.quarkus.deployment.index.IndexingUtil.indexClass(IndexingUtil.java:152)
+	... 12 more
+
+	at io.quarkus.test.QuarkusUnitTest.beforeAll(QuarkusUnitTest.java:709)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.RuntimeException: io.quarkus.builder.BuildException: Build failure: Build failed due to errors
+	[error]: Build step io.quarkus.arc.deployment.BeanArchiveProcessor#build threw an exception: java.lang.IllegalStateException: Failed to index: dev.matheuscruz.GeneratedPingResource
+	at io.quarkus.deployment.index.IndexingUtil.indexClass(IndexingUtil.java:157)
+	at io.quarkus.arc.deployment.BeanArchiveProcessor.build(BeanArchiveProcessor.java:94)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.quarkus.deployment.ExtensionLoader$3.execute(ExtensionLoader.java:849)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:256)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2513)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1538)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:501)
+Caused by: java.lang.IllegalArgumentException: stream cannot be null
+	at org.jboss.jandex.Indexer.indexWithSummary(Indexer.java:2482)
+	at io.quarkus.deployment.index.IndexingUtil.indexClass(IndexingUtil.java:152)
+	... 12 more
+
+	at io.quarkus.runner.bootstrap.AugmentActionImpl.runAugment(AugmentActionImpl.java:334)
+	at io.quarkus.runner.bootstrap.AugmentActionImpl.createInitialRuntimeApplication(AugmentActionImpl.java:251)
+	at io.quarkus.test.QuarkusUnitTest.beforeAll(QuarkusUnitTest.java:655)
+	... 1 more
+Caused by: io.quarkus.builder.BuildException: Build failure: Build failed due to errors
+	[error]: Build step io.quarkus.arc.deployment.BeanArchiveProcessor#build threw an exception: java.lang.IllegalStateException: Failed to index: dev.matheuscruz.GeneratedPingResource
+	at io.quarkus.deployment.index.IndexingUtil.indexClass(IndexingUtil.java:157)
+	at io.quarkus.arc.deployment.BeanArchiveProcessor.build(BeanArchiveProcessor.java:94)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.quarkus.deployment.ExtensionLoader$3.execute(ExtensionLoader.java:849)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:256)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2513)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1538)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:501)
+Caused by: java.lang.IllegalArgumentException: stream cannot be null
+	at org.jboss.jandex.Indexer.indexWithSummary(Indexer.java:2482)
+	at io.quarkus.deployment.index.IndexingUtil.indexClass(IndexingUtil.java:152)
+	... 12 more
+
+	at io.quarkus.builder.Execution.run(Execution.java:123)
+	at io.quarkus.builder.BuildExecutionBuilder.execute(BuildExecutionBuilder.java:79)
+	at io.quarkus.deployment.QuarkusAugmentor.run(QuarkusAugmentor.java:160)
+	at io.quarkus.runner.bootstrap.AugmentActionImpl.runAugment(AugmentActionImpl.java:330)
+	... 3 more
+Caused by: java.lang.IllegalStateException: Failed to index: dev.matheuscruz.GeneratedPingResource
+	at io.quarkus.deployment.index.IndexingUtil.indexClass(IndexingUtil.java:157)
+	at io.quarkus.arc.deployment.BeanArchiveProcessor.build(BeanArchiveProcessor.java:94)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.quarkus.deployment.ExtensionLoader$3.execute(ExtensionLoader.java:849)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:256)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2513)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1538)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:501)
+Caused by: java.lang.IllegalArgumentException: stream cannot be null
+	at org.jboss.jandex.Indexer.indexWithSummary(Indexer.java:2482)
+	at io.quarkus.deployment.index.IndexingUtil.indexClass(IndexingUtil.java:152)
+	... 9 more
+]]></error>
+    <system-out><![CDATA[2023-12-30 19:39:49,154 ERROR [io.qua.dep.dev.IsolatedDevModeMain] (main) Failed to start quarkus: java.lang.RuntimeException: io.quarkus.builder.BuildException: Build failure: Build failed due to errors
+	[error]: Build step io.quarkus.arc.deployment.BeanArchiveProcessor#build threw an exception: java.lang.IllegalStateException: Failed to index: dev.matheuscruz.GeneratedPingResource
+	at io.quarkus.deployment.index.IndexingUtil.indexClass(IndexingUtil.java:157)
+	at io.quarkus.arc.deployment.BeanArchiveProcessor.build(BeanArchiveProcessor.java:94)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.quarkus.deployment.ExtensionLoader$3.execute(ExtensionLoader.java:849)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:256)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2513)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1538)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:501)
+Caused by: java.lang.IllegalArgumentException: stream cannot be null
+	at org.jboss.jandex.Indexer.indexWithSummary(Indexer.java:2482)
+	at io.quarkus.deployment.index.IndexingUtil.indexClass(IndexingUtil.java:152)
+	... 12 more
+
+	at io.quarkus.runner.bootstrap.AugmentActionImpl.runAugment(AugmentActionImpl.java:334)
+	at io.quarkus.runner.bootstrap.AugmentActionImpl.createInitialRuntimeApplication(AugmentActionImpl.java:251)
+	at io.quarkus.runner.bootstrap.AugmentActionImpl.createInitialRuntimeApplication(AugmentActionImpl.java:60)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.firstStart(IsolatedDevModeMain.java:112)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.accept(IsolatedDevModeMain.java:433)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.accept(IsolatedDevModeMain.java:55)
+	at io.quarkus.bootstrap.app.CuratedApplication.runInCl(CuratedApplication.java:138)
+	at io.quarkus.bootstrap.app.CuratedApplication.runInAugmentClassLoader(CuratedApplication.java:93)
+	at io.quarkus.deployment.dev.DevModeMain.start(DevModeMain.java:131)
+	at io.quarkus.test.QuarkusDevModeTest.beforeEach(QuarkusDevModeTest.java:305)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: io.quarkus.builder.BuildException: Build failure: Build failed due to errors
+	[error]: Build step io.quarkus.arc.deployment.BeanArchiveProcessor#build threw an exception: java.lang.IllegalStateException: Failed to index: dev.matheuscruz.GeneratedPingResource
+	at io.quarkus.deployment.index.IndexingUtil.indexClass(IndexingUtil.java:157)
+	at io.quarkus.arc.deployment.BeanArchiveProcessor.build(BeanArchiveProcessor.java:94)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.quarkus.deployment.ExtensionLoader$3.execute(ExtensionLoader.java:849)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:256)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2513)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1538)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:501)
+Caused by: java.lang.IllegalArgumentException: stream cannot be null
+	at org.jboss.jandex.Indexer.indexWithSummary(Indexer.java:2482)
+	at io.quarkus.deployment.index.IndexingUtil.indexClass(IndexingUtil.java:152)
+	... 12 more
+
+	at io.quarkus.builder.Execution.run(Execution.java:123)
+	at io.quarkus.builder.BuildExecutionBuilder.execute(BuildExecutionBuilder.java:79)
+	at io.quarkus.deployment.QuarkusAugmentor.run(QuarkusAugmentor.java:160)
+	at io.quarkus.runner.bootstrap.AugmentActionImpl.runAugment(AugmentActionImpl.java:330)
+	... 11 more
+Caused by: java.lang.IllegalStateException: Failed to index: dev.matheuscruz.GeneratedPingResource
+	at io.quarkus.deployment.index.IndexingUtil.indexClass(IndexingUtil.java:157)
+	at io.quarkus.arc.deployment.BeanArchiveProcessor.build(BeanArchiveProcessor.java:94)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.quarkus.deployment.ExtensionLoader$3.execute(ExtensionLoader.java:849)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:256)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2513)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1538)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:501)
+Caused by: java.lang.IllegalArgumentException: stream cannot be null
+	at org.jboss.jandex.Indexer.indexWithSummary(Indexer.java:2482)
+	at io.quarkus.deployment.index.IndexingUtil.indexClass(IndexingUtil.java:152)
+	... 9 more
+
+2023-12-30 19:39:49,157 ERROR [io.qua.dep.dev.DevModeMain] (main) Quarkus dev mode failed to start: java.lang.RuntimeException: io.quarkus.builder.BuildException: Build failure: Build failed due to errors
+	[error]: Build step io.quarkus.arc.deployment.BeanArchiveProcessor#build threw an exception: java.lang.IllegalStateException: Failed to index: dev.matheuscruz.GeneratedPingResource
+	at io.quarkus.deployment.index.IndexingUtil.indexClass(IndexingUtil.java:157)
+	at io.quarkus.arc.deployment.BeanArchiveProcessor.build(BeanArchiveProcessor.java:94)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.quarkus.deployment.ExtensionLoader$3.execute(ExtensionLoader.java:849)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:256)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2513)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1538)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:501)
+Caused by: java.lang.IllegalArgumentException: stream cannot be null
+	at org.jboss.jandex.Indexer.indexWithSummary(Indexer.java:2482)
+	at io.quarkus.deployment.index.IndexingUtil.indexClass(IndexingUtil.java:152)
+	... 12 more
+
+	at io.quarkus.runner.bootstrap.AugmentActionImpl.runAugment(AugmentActionImpl.java:334)
+	at io.quarkus.runner.bootstrap.AugmentActionImpl.createInitialRuntimeApplication(AugmentActionImpl.java:251)
+	at io.quarkus.runner.bootstrap.AugmentActionImpl.createInitialRuntimeApplication(AugmentActionImpl.java:60)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.firstStart(IsolatedDevModeMain.java:112)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.accept(IsolatedDevModeMain.java:433)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.accept(IsolatedDevModeMain.java:55)
+	at io.quarkus.bootstrap.app.CuratedApplication.runInCl(CuratedApplication.java:138)
+	at io.quarkus.bootstrap.app.CuratedApplication.runInAugmentClassLoader(CuratedApplication.java:93)
+	at io.quarkus.deployment.dev.DevModeMain.start(DevModeMain.java:131)
+	at io.quarkus.test.QuarkusDevModeTest.beforeEach(QuarkusDevModeTest.java:305)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: io.quarkus.builder.BuildException: Build failure: Build failed due to errors
+	[error]: Build step io.quarkus.arc.deployment.BeanArchiveProcessor#build threw an exception: java.lang.IllegalStateException: Failed to index: dev.matheuscruz.GeneratedPingResource
+	at io.quarkus.deployment.index.IndexingUtil.indexClass(IndexingUtil.java:157)
+	at io.quarkus.arc.deployment.BeanArchiveProcessor.build(BeanArchiveProcessor.java:94)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.quarkus.deployment.ExtensionLoader$3.execute(ExtensionLoader.java:849)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:256)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2513)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1538)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:501)
+Caused by: java.lang.IllegalArgumentException: stream cannot be null
+	at org.jboss.jandex.Indexer.indexWithSummary(Indexer.java:2482)
+	at io.quarkus.deployment.index.IndexingUtil.indexClass(IndexingUtil.java:152)
+	... 12 more
+
+	at io.quarkus.builder.Execution.run(Execution.java:123)
+	at io.quarkus.builder.BuildExecutionBuilder.execute(BuildExecutionBuilder.java:79)
+	at io.quarkus.deployment.QuarkusAugmentor.run(QuarkusAugmentor.java:160)
+	at io.quarkus.runner.bootstrap.AugmentActionImpl.runAugment(AugmentActionImpl.java:330)
+	... 11 more
+Caused by: java.lang.IllegalStateException: Failed to index: dev.matheuscruz.GeneratedPingResource
+	at io.quarkus.deployment.index.IndexingUtil.indexClass(IndexingUtil.java:157)
+	at io.quarkus.arc.deployment.BeanArchiveProcessor.build(BeanArchiveProcessor.java:94)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.quarkus.deployment.ExtensionLoader$3.execute(ExtensionLoader.java:849)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:256)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2513)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1538)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:501)
+Caused by: java.lang.IllegalArgumentException: stream cannot be null
+	at org.jboss.jandex.Indexer.indexWithSummary(Indexer.java:2482)
+	at io.quarkus.deployment.index.IndexingUtil.indexClass(IndexingUtil.java:152)
+	... 9 more
+
+]]></system-out>
+  </testcase>
+</testsuite>

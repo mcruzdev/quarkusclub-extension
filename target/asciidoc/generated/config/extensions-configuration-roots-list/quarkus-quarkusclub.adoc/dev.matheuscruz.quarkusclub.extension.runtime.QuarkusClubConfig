@@ -1,0 +1,1 @@
+dev.matheuscruz.quarkusclub.extension.runtime.QuarkusClubConfig
