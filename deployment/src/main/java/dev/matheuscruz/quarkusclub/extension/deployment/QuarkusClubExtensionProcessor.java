@@ -21,7 +21,6 @@ import io.quarkus.deployment.builditem.GeneratedClassBuildItem;
 import io.quarkus.deployment.builditem.LogHandlerBuildItem;
 import io.quarkus.gizmo.ClassCreator;
 import io.quarkus.gizmo.MethodCreator;
-import io.quarkus.resteasy.reactive.spi.AdditionalResourceClassBuildItem;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
@@ -69,7 +68,6 @@ class QuarkusClubExtensionProcessor {
     @BuildStep
     void generatePingResource(
             BuildProducer<GeneratedClassBuildItem> generatedClasses,
-            BuildProducer<AdditionalResourceClassBuildItem> additionalResources,
             CombinedIndexBuildItem jandex) {
 
         GeneratedClassGizmoAdaptor gizmoAdapter = new GeneratedClassGizmoAdaptor(generatedClasses, true);
@@ -92,14 +90,4 @@ class QuarkusClubExtensionProcessor {
             }
         }
     }
-
-    @BuildStep
-    void addPingResource(CombinedIndexBuildItem index,
-            BuildProducer<AdditionalResourceClassBuildItem> additionalResourceClassProducer) {
-
-        index.getIndex().getAnnotations(Path.class).stream()
-                .forEach(item -> System.out.println(item.target().asClass()));
-
-    }
-
 }

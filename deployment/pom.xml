@@ -12,12 +12,6 @@
   <artifactId>quarkusclub-extension-deployment</artifactId>
   <name>Quarkusclub Extension - Deployment</name>
   <dependencies>
-
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-resteasy-reactive-spi-deployment</artifactId>
-    </dependency>
-
     <dependency>
       <groupId>jakarta.ws.rs</groupId>
       <artifactId>jakarta.ws.rs-api</artifactId>
